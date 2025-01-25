@@ -1,12 +1,13 @@
 // Imports go first
+import { firePottery } from "./Kiln.js"
 import { makePottery } from "./PotteryWheel.js"
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery("mug", 1, 3)
-let plate = makePottery("plate", 2, 1)
-let bowl = makePottery("bowl", 2, 2)
-let pan = makePottery("pan", 5, 3)
-let tray = makePottery("tray", 4, 1)
+const mug = makePottery("mug", 1, 3)
+const plate = makePottery("plate", 2, 1)
+const bowl = makePottery("bowl", 2, 2)
+const pan = makePottery("pan", 5, 3)
+const tray = makePottery("tray", 4, 1)
 
 console.log(mug)
 console.log(plate)
@@ -15,7 +16,17 @@ console.log(pan)
 console.log(tray)
 
 // Fire each piece of pottery in the kiln
+const fireMug = firePottery(mug, 2000)
+const firePlate = firePottery(plate, 2500)
+const fireBowl = firePottery(bowl, 2200)
+const firePan = firePottery(pan, 1500)
+const fireTray = firePottery(tray, 3000)
 
+console.log(fireMug)
+console.log(firePlate)
+console.log(fireBowl)
+console.log(firePan)
+console.log(fireTray)
 
 // Determine which ones should be sold, and their price
 
