@@ -1,7 +1,7 @@
 // Imports go first
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js"
-import { PotteryList } from "./PotteryList.js"
+import { PotteryList, renderListToDOM } from "./PotteryList.js"
 import { makePottery } from "./PotteryWheel.js"
 
 // Make 5 pieces of pottery at the wheel
@@ -46,5 +46,5 @@ const soldPottery = usePottery()
 console.log(soldPottery)
 
 // Invoke the component function that renders the HTML list
-const list = PotteryList();
-console.log(list);
+const potteryList = PotteryList();
+renderListToDOM(potteryList)

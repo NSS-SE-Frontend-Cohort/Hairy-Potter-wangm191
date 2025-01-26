@@ -4,9 +4,9 @@ export const PotteryList = () => {
     const soldPottery = usePottery();
     let potteryListHtml = '';
 
-    soldPottery.forEach(pottery => {
+    soldPottery.map(pottery => {
         potteryListHtml += `
-        <section class="pottery" id="${pottery.id}">
+        <section class="pottery" id="pottery--${pottery.id}">
             <h2 class="pottery__shape">${pottery.shape}</h2>
             <div class="pottery__properties">
                 Item weighs ${pottery.weight} grams and is ${pottery.height} cm in height
@@ -15,7 +15,11 @@ export const PotteryList = () => {
         </section>
         `;
     });
+
+    return potteryListHtml;
+}
     
+    export const renderListToDOM = (potteryListHtml) => {
     const potteryListString = document.getElementById('potteryList')
 
     if (potteryListString) {
