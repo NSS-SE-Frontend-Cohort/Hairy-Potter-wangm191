@@ -1,4 +1,4 @@
-const soldPottery = []
+const forSalePottery = []
 
 export const toSellOrNotToSell = (pottery) => {
     if ( pottery.cracked == false ){
@@ -8,10 +8,10 @@ export const toSellOrNotToSell = (pottery) => {
         else {
             pottery.price = 20
         }
-        soldPottery.push(pottery)
+        forSalePottery.push(pottery)
     }
 
     return pottery
 }
 
-export const usePottery = () => JSON.parse(JSON.stringify(soldPottery));
+export const usePottery = () => JSON.parse(JSON.stringify(forSalePottery));
