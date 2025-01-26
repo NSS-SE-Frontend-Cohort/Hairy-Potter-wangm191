@@ -120,12 +120,17 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+
+   > In the index.html file I created an <article> tag with the id of 'potteryList', then in PotteryList.js renderListToDOM() links 'potteryList' <article> tag with the html String data generated with PotteryList(). When main.js is ran, PotteryList() and renderListToDOM() are invoked which result in the data being gathered and displayed in the browser. 
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   
+   > https://www.loom.com/share/910acfe5f6d544c0b9c46fedbf0bbf50 
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   
+   > Because it makes code more organized and readable if it was passed along to another engineer. Also functions can be imported to other modules so we don't need to have redundant code and functions being called when not needed.    
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   
+   > To allow cracked pottery to be sold at a discounted price, I would need to update toSellOrNotToSell() in PotteryCatalog.js file. I would need to alter the if statements to check if the pottery object is cracked, and if so set the price to $2.50. I would also need to make sure that the cracked pottery is listed in the forSalePottery[] and that it is being called and displayed on the browser. 
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   
+   > https://www.loom.com/share/9aadd9adaee34002ac9b0c922f345a65 
