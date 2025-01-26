@@ -14,7 +14,7 @@ export const PotteryList = () => {
             <div class="pottery__price">Price is $${pottery.price}</div>
         </section>
         `;
-    });
+    }).join("");
 
     return potteryListHtml;
 }
